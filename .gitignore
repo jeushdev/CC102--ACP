@@ -1,0 +1,7 @@
+#Ignore the filetypes
+*.pdf
+*.docx
+*.png
+
+#Ignore the folders
+projects/
