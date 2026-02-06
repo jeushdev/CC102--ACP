@@ -45,4 +45,4 @@ To run these projects on your local machine, follow these steps:
 * **Clean Repo:** The `__pycache__` folders and `.vscode` settings are excluded via `.gitignore` to keep the repository clean.
 
 ---
-*Created by [Your Name]. Happy Coding!* 🚀
+*Created by jeush Happy Coding!* 🚀
