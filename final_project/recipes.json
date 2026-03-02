@@ -1,0 +1,27 @@
+{
+    "fried_egg": {
+        "name": "Fried Egg",
+        "ingredients": {
+            "egg": {"amount": 1, "unit": "pc"},
+            "oil": {"amount": 1, "unit": "tspn"},
+            "salt": {"amount": 0.5, "unit": "tspn"}
+        },
+        "steps": [
+            "Heat the pan and add oil.",
+            "Crack the egg in the pan.",
+            "Sprinkle salt and serve."
+        ]
+    },
+    "boiled_egg": {
+        "name": "Boiled Egg",
+        "ingredients": {
+            "egg": {"amount": 1, "unit": "pc"},
+            "water": {"amount": 500, "unit": "ml"}
+        },
+        "steps": [
+            "Boil water in a pot.",
+            "Add egg and wait 7 minutes.",
+            "Peel and enjoy."
+        ]
+    }
+}

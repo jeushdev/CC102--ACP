@@ -1,0 +1,18 @@
+{
+    "egg": {
+        "amount": 2.0,
+        "unit": "pc"
+    },
+    "oil": {
+        "amount": 3,
+        "unit": "tspn"
+    },
+    "salt": {
+        "amount": 99.0,
+        "unit": "g"
+    },
+    "chicken breast": {
+        "amount": 1000.0,
+        "unit": "g"
+    }
+}
