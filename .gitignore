@@ -2,6 +2,15 @@
 *.pdf
 *.docx
 *.png
+*.ttf
+*.txt
+*.pyc
+*.webp
+*.pptx
+*.mp3
+*.jpg
+*.avif
+*settings.json
 
 #Ignore the folders
 projects/
