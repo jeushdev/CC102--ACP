@@ -1,0 +1,597 @@
+{
+    "fried_egg": {
+        "name": "Fried Egg",
+        "ingredients": {
+            "egg": {"amount": 1, "unit": "pc"},
+            "oil": {"amount": 1, "unit": "tspn"},
+            "salt": {"amount": 0.5, "unit": "tspn"}
+        },
+        "steps": [
+            "Heat the pan and add oil.",
+            "Crack the egg in the pan.",
+            "Sprinkle salt and serve."
+        ]
+    },
+    "boiled_egg": {
+        "name": "Boiled Egg",
+        "ingredients": {
+            "egg": {"amount": 1, "unit": "pc"},
+            "water": {"amount": 500, "unit": "ml"}
+        },
+        "steps": [
+            "Boil water in a pot.",
+            "Add egg and wait 7 minutes.",
+            "Peel and enjoy."
+        ]
+    },
+    "adobong_manok": {
+        "name": "Chicken Adobo",
+        "ingredients": {
+            "chicken": {"amount": 500, "unit": "g"},
+            "soy_sauce": {"amount": 60, "unit": "ml"},
+            "vinegar": {"amount": 30, "unit": "ml"},
+            "garlic": {"amount": 3, "unit": "pc"},
+            "peppercorn": {"amount": 1, "unit": "tspn"},
+            "bay_leaf": {"amount": 2, "unit": "pc"}
+        },
+        "steps": [
+            "Marinate chicken in soy sauce and garlic for 30 mins.",
+            "Pan-fry the chicken until brown.",
+            "Add the marinade, vinegar, and bay leaves.",
+            "Simmer for 20-30 minutes until chicken is tender."
+        ]
+    },
+    "sinigang_na_baboy": {
+        "name": "Pork Sinigang",
+        "ingredients": {
+            "pork_belly": {"amount": 500, "unit": "g"},
+            "sinigang_mix": {"amount": 1, "unit": "pc"},
+            "tomato": {"amount": 2, "unit": "pc"},
+            "onion": {"amount": 1, "unit": "pc"},
+            "radish": {"amount": 1, "unit": "pc"},
+            "kangkong": {"amount": 1, "unit": "bunch"},
+            "water": {"amount": 1000, "unit": "ml"}
+        },
+        "steps": [
+            "Boil pork with onions and tomatoes until tender.",
+            "Add radish and simmer for 5 minutes.",
+            "Pour in the sinigang souring mix.",
+            "Add kangkong leaves, turn off heat, and cover for 2 minutes."
+        ]
+    },
+    "pancit_canton": {
+        "name": "Pancit Canton",
+        "ingredients": {
+            "canton_noodles": {"amount": 250, "unit": "g"},
+            "pork": {"amount": 100, "unit": "g"},
+            "shrimp": {"amount": 100, "unit": "g"},
+            "cabbage": {"amount": 100, "unit": "g"},
+            "carrot": {"amount": 1, "unit": "pc"},
+            "soy_sauce": {"amount": 30, "unit": "ml"}
+        },
+        "steps": [
+            "Sauté pork, shrimp, and vegetables.",
+            "Add soy sauce and a cup of water; bring to a boil.",
+            "Add noodles and stir until liquid is absorbed.",
+            "Serve with calamansi on the side."
+        ]
+    },
+    "tinolang_manok": {
+        "name": "Chicken Tinola",
+        "ingredients": {
+            "chicken": {"amount": 500, "unit": "g"},
+            "sayote": {"amount": 1, "unit": "pc"},
+            "ginger": {"amount": 1, "unit": "pc"},
+            "malunggay_leaves": {"amount": 1, "unit": "cup"},
+            "fish_sauce": {"amount": 2, "unit": "tbsp"},
+            "water": {"amount": 800, "unit": "ml"}
+        },
+        "steps": [
+            "Sauté ginger, garlic, and onion.",
+            "Add chicken and cook until slightly brown.",
+            "Pour in water and simmer until chicken is cooked.",
+            "Add sayote and malunggay leaves before serving."
+        ]
+    },
+    "beef_caldereta": {
+        "name": "Beef Caldereta",
+        "ingredients": {
+            "beef": {"amount": 500, "unit": "g"},
+            "tomato_sauce": {"amount": 200, "unit": "ml"},
+            "liver_spread": {"amount": 85, "unit": "g"},
+            "potato": {"amount": 2, "unit": "pc"},
+            "bell_pepper": {"amount": 1, "unit": "pc"},
+            "cheese": {"amount": 50, "unit": "g"}
+        },
+        "steps": [
+            "Stew beef until very tender.",
+            "Add tomato sauce and liver spread.",
+            "Add potatoes and carrots; cook until soft.",
+            "Stir in cheese and bell peppers for a creamy finish."
+        ]
+    },
+    "tortang_talong": {
+        "name": "Tortang Talong",
+        "ingredients": {
+            "eggplant": {"amount": 2, "unit": "pc"},
+            "egg": {"amount": 2, "unit": "pc"},
+            "salt": {"amount": 1, "unit": "tspn"},
+            "oil": {"amount": 30, "unit": "ml"}
+        },
+        "steps": [
+            "Grill the eggplant until skin is charred.",
+            "Peel off the skin but keep the stem.",
+            "Flatten eggplant and dip in beaten eggs.",
+            "Pan-fry until golden brown."
+        ]
+    },
+    "lumpia_shanghai": {
+        "name": "Lumpiang Shanghai",
+        "ingredients": {
+            "ground_pork": {"amount": 500, "unit": "g"},
+            "wrapper": {"amount": 20, "unit": "pc"},
+            "carrot": {"amount": 1, "unit": "pc"},
+            "onion": {"amount": 1, "unit": "pc"},
+            "egg": {"amount": 1, "unit": "pc"}
+        },
+        "steps": [
+            "Mix pork, minced carrots, onions, and egg.",
+            "Wrap a small amount of mixture in wrappers.",
+            "Deep fry until golden brown and crispy.",
+            "Serve with sweet and sour sauce."
+        ]
+    },
+    "bicol_express": {
+        "name": "Bicol Express",
+        "ingredients": {
+            "pork_belly": {"amount": 500, "unit": "g"},
+            "coconut_milk": {"amount": 400, "unit": "ml"},
+            "chili": {"amount": 10, "unit": "pc"},
+            "shrimp_paste": {"amount": 2, "unit": "tbsp"},
+            "garlic": {"amount": 3, "unit": "pc"}
+        },
+        "steps": [
+            "Sauté garlic, onion, and pork.",
+            "Add shrimp paste and chilies.",
+            "Pour in coconut milk.",
+            "Simmer until the sauce thickens and pork is tender."
+        ]
+    },
+    "ginataang_kalabasa": {
+        "name": "Ginataang Kalabasa",
+        "ingredients": {
+            "squash": {"amount": 300, "unit": "g"},
+            "sitaw": {"amount": 1, "unit": "bunch"},
+            "coconut_milk": {"amount": 400, "unit": "ml"},
+            "shrimp": {"amount": 100, "unit": "g"},
+            "ginger": {"amount": 1, "unit": "pc"}
+        },
+        "steps": [
+            "Sauté ginger, garlic, and shrimp.",
+            "Add squash and coconut milk.",
+            "Simmer until squash is soft.",
+            "Add sitaw (string beans) and cook for 3 more minutes."
+        ]
+    },
+    "pork_menudo": {
+        "name": "Pork Menudo",
+        "ingredients": {
+            "pork": {"amount": 500, "unit": "g"},
+            "pork_liver": {"amount": 100, "unit": "g"},
+            "tomato_sauce": {"amount": 200, "unit": "ml"},
+            "potato": {"amount": 1, "unit": "pc"},
+            "raisins": {"amount": 30, "unit": "g"},
+            "hotdog": {"amount": 2, "unit": "pc"}
+        },
+        "steps": [
+            "Sauté pork and liver.",
+            "Add tomato sauce and water; simmer until pork is soft.",
+            "Add diced potatoes, carrots, and hotdogs.",
+            "Stir in raisins and cook until sauce thickens."
+        ]
+    },
+    "nilagang_baka": {
+        "name": "Beef Nilaga",
+        "ingredients": {
+            "beef_shank": {"amount": 500, "unit": "g"},
+            "cabbage": {"amount": 1, "unit": "pc"},
+            "potato": {"amount": 2, "unit": "pc"},
+            "peppercorn": {"amount": 1, "unit": "tspn"},
+            "onion": {"amount": 1, "unit": "pc"},
+            "corn": {"amount": 2, "unit": "pc"}
+        },
+        "steps": [
+            "Boil beef with onions and peppercorns until tender (approx 1-2 hours).",
+            "Add corn and potatoes.",
+            "Once potatoes are soft, add cabbage.",
+            "Season with fish sauce and serve hot."
+        ]
+    },
+    "chicken_afritada": {
+        "name": "Chicken Afritada",
+        "ingredients": {
+            "chicken": {"amount": 500, "unit": "g"},
+            "tomato_sauce": {"amount": 200, "unit": "ml"},
+            "potato": {"amount": 1, "unit": "pc"},
+            "carrot": {"amount": 1, "unit": "pc"},
+            "bell_pepper": {"amount": 1, "unit": "pc"}
+        },
+        "steps": [
+            "Brown the chicken in a pan.",
+            "Add tomato sauce and water; simmer.",
+            "Add potatoes and carrots.",
+            "Add bell peppers and cook until sauce reduces."
+        ]
+    },
+    "bulalo": {
+        "name": "Beef Bulalo",
+        "ingredients": {
+            "beef_marrow_bones": {"amount": 1000, "unit": "g"},
+            "corn": {"amount": 2, "unit": "pc"},
+            "pechay": {"amount": 1, "unit": "bunch"},
+            "peppercorn": {"amount": 1, "unit": "tspn"},
+            "water": {"amount": 2000, "unit": "ml"}
+        },
+        "steps": [
+            "Boil beef bones for 3-4 hours until meat falls off the bone.",
+            "Remove scum from the surface regularly.",
+            "Add corn and simmer.",
+            "Add pechay leaves and serve immediately."
+        ]
+    },
+    "pork_sisig": {
+        "name": "Pork Sisig",
+        "ingredients": {
+            "pork_face": {"amount": 500, "unit": "g"},
+            "onion": {"amount": 2, "unit": "pc"},
+            "chili": {"amount": 3, "unit": "pc"},
+            "mayonnaise": {"amount": 2, "unit": "tbsp"},
+            "calamansi": {"amount": 3, "unit": "pc"}
+        },
+        "steps": [
+            "Boil and then grill pork until crispy.",
+            "Chop pork into very small pieces.",
+            "Sauté with onions and chilies.",
+            "Add mayonnaise and calamansi juice before serving on a sizzling plate."
+        ]
+    },
+    "lechon_paksiw": {
+        "name": "Lechon Paksiw",
+        "ingredients": {
+            "lechon_leftovers": {"amount": 500, "unit": "g"},
+            "lechon_sauce": {"amount": 250, "unit": "ml"},
+            "vinegar": {"amount": 60, "unit": "ml"},
+            "sugar": {"amount": 2, "unit": "tbsp"},
+            "bay_leaf": {"amount": 2, "unit": "pc"}
+        },
+        "steps": [
+            "Place lechon meat in a pot.",
+            "Add lechon sauce, vinegar, and water.",
+            "Add bay leaves and sugar.",
+            "Simmer until meat is tender and sauce thickens."
+        ]
+    },
+    "pork_adobo_sa_puti": {
+        "name": "Adobo sa Puti (White Adobo)",
+        "ingredients": {
+            "pork_belly": {"amount": 500, "unit": "g"},
+            "vinegar": {"amount": 120, "unit": "ml"},
+            "garlic": {"amount": 5, "unit": "pc"},
+            "salt": {"amount": 1, "unit": "tspn"},
+            "peppercorn": {"amount": 1, "unit": "tspn"},
+            "water": {"amount": 250, "unit": "ml"}
+        },
+        "steps": [
+            "Combine pork, vinegar, crushed garlic, salt, and peppercorns in a pot.",
+            "Simmer until the pork is tender and the liquid reduces.",
+            "Once dry, let the pork fry in its own fat until golden brown.",
+            "Add a little water to deglaze the pan and create a light sauce."
+        ]
+    },
+    "kare_kare": {
+        "name": "Kare-Kare",
+        "ingredients": {
+            "oxtail": {"amount": 1000, "unit": "g"},
+            "peanut_butter": {"amount": 250, "unit": "g"},
+            "bagoong_alamang": {"amount": 60, "unit": "g"},
+            "pechay": {"amount": 1, "unit": "bunch"},
+            "sitaw": {"amount": 1, "unit": "bunch"},
+            "eggplant": {"amount": 2, "unit": "pc"},
+            "annatto_seeds": {"amount": 2, "unit": "tbsp"}
+        },
+        "steps": [
+            "Boil oxtail until very tender.",
+            "Soak annatto seeds in water to get the orange color; add the liquid to the pot.",
+            "Stir in peanut butter until the sauce thickens.",
+            "Add vegetables and cook until tender. Serve with bagoong on the side."
+        ]
+    },
+    "dinuguan": {
+        "name": "Dinuguan (Pork Blood Stew)",
+        "ingredients": {
+            "pork_shoulder": {"amount": 500, "unit": "g"},
+            "pork_blood": {"amount": 250, "unit": "ml"},
+            "vinegar": {"amount": 125, "unit": "ml"},
+            "long_green_chili": {"amount": 3, "unit": "pc"},
+            "garlic": {"amount": 4, "unit": "pc"}
+        },
+        "steps": [
+            "Sauté garlic and onion, then add the pork until browned.",
+            "Pour in vinegar and simmer without stirring for 5 minutes.",
+            "Slowly pour in the pork blood while stirring continuously to avoid lumps.",
+            "Add chilies and simmer until the sauce thickens and turns dark."
+        ]
+    },
+    "laing": {
+        "name": "Laing (Taro Leaves in Coconut Milk)",
+        "ingredients": {
+            "dried_taro_leaves": {"amount": 100, "unit": "g"},
+            "coconut_milk": {"amount": 800, "unit": "ml"},
+            "shrimp_paste": {"amount": 2, "unit": "tbsp"},
+            "pork_belly": {"amount": 100, "unit": "g"},
+            "ginger": {"amount": 1, "unit": "pc"},
+            "chili": {"amount": 5, "unit": "pc"}
+        },
+        "steps": [
+            "Sauté ginger, garlic, and pork in a pot.",
+            "Pour in coconut milk and shrimp paste; bring to a simmer.",
+            "Add the dried taro leaves but DO NOT stir until they are submerged and soft.",
+            "Add chilies and simmer until the coconut milk becomes oily."
+        ]
+    },
+    "pork_binagoongan": {
+        "name": "Pork Binagoongan",
+        "ingredients": {
+            "pork_belly": {"amount": 500, "unit": "g"},
+            "shrimp_paste": {"amount": 4, "unit": "tbsp"},
+            "tomato": {"amount": 2, "unit": "pc"},
+            "eggplant": {"amount": 1, "unit": "pc"},
+            "sugar": {"amount": 1, "unit": "tbsp"}
+        },
+        "steps": [
+            "Sauté garlic, onion, and tomatoes.",
+            "Add pork and cook until browned.",
+            "Stir in the shrimp paste and sugar; simmer until pork is tender.",
+            "Add fried eggplant slices before serving."
+        ]
+    },
+    "embutido": {
+        "name": "Embutido (Filipino Meatloaf)",
+        "ingredients": {
+            "ground_pork": {"amount": 500, "unit": "g"},
+            "raisins": {"amount": 50, "unit": "g"},
+            "bell_pepper": {"amount": 1, "unit": "pc"},
+            "egg": {"amount": 2, "unit": "pc"},
+            "vienna_sausage": {"amount": 2, "unit": "pc"},
+            "cheese": {"amount": 50, "unit": "g"}
+        },
+        "steps": [
+            "Mix ground pork, minced bell peppers, raisins, cheese, and 1 egg.",
+            "Spread the mixture on foil, place sausages and hard-boiled eggs in the center.",
+            "Roll the foil tightly and steam for 1 hour.",
+            "Chill, slice, and pan-fry before serving."
+        ]
+    },
+    "pinakbet": {
+        "name": "Pinakbet",
+        "ingredients": {
+            "squash": {"amount": 200, "unit": "g"},
+            "sitaw": {"amount": 1, "unit": "bunch"},
+            "bitter_gourd": {"amount": 1, "unit": "pc"},
+            "shrimp_paste": {"amount": 2, "unit": "tbsp"},
+            "pork_cracklings": {"amount": 50, "unit": "g"}
+        },
+        "steps": [
+            "Sauté garlic, onion, and pork slices.",
+            "Add shrimp paste and cook for 2 minutes.",
+            "Add squash and bittermelon with a little water.",
+            "Add sitaw and okra; top with chicharon before serving."
+        ]
+    },
+    "chicken_pastel": {
+        "name": "Chicken Pastel",
+        "ingredients": {
+            "chicken": {"amount": 500, "unit": "g"},
+            "all_purpose_cream": {"amount": 250, "unit": "ml"},
+            "mushroom": {"amount": 1, "unit": "can"},
+            "chorizo_de_bilbao": {"amount": 1, "unit": "pc"},
+            "potato": {"amount": 1, "unit": "pc"}
+        },
+        "steps": [
+            "Sauté chicken and chorizo.",
+            "Add potatoes and carrots; simmer in a bit of broth.",
+            "Pour in cream and mushrooms.",
+            "Transfer to a dish, cover with pastry crust (optional), and bake or serve as is."
+        ]
+    },
+    "crispy_pata": {
+        "name": "Crispy Pata",
+        "ingredients": {
+            "pork_leg": {"amount": 1500, "unit": "g"},
+            "star_anise": {"amount": 2, "unit": "pc"},
+            "peppercorn": {"amount": 1, "unit": "tbsp"},
+            "oil": {"amount": 1000, "unit": "ml"},
+            "salt": {"amount": 2, "unit": "tbsp"}
+        },
+        "steps": [
+            "Boil the pork leg with salt and spices until very tender (about 2 hours).",
+            "Drain and air-dry the leg completely (crucial for crispiness).",
+            "Deep fry in very hot oil until the skin is blistered and golden.",
+            "Serve with a soy-vinegar dipping sauce."
+        ]
+    },
+    "lechon_kawali": {
+        "name": "Lechon Kawali",
+        "ingredients": {
+            "pork_liempo": {"amount": 500, "unit": "g"},
+            "salt": {"amount": 1, "unit": "tbsp"},
+            "peppercorn": {"amount": 1, "unit": "tspn"},
+            "bay_leaf": {"amount": 2, "unit": "pc"},
+            "oil": {"amount": 500, "unit": "ml"}
+        },
+        "steps": [
+            "Boil pork belly with salt, pepper, and bay leaves until tender.",
+            "Dry the pork thoroughly and prick the skin with a fork.",
+            "Deep fry until the skin is crispy and meat is golden brown.",
+            "Chop into bite-sized pieces and serve with Mang Tomas sauce."
+        ]
+    },
+    "tokwa_t_baboy": {
+        "name": "Tokwa’t Baboy",
+        "ingredients": {
+            "tofu": {"amount": 3, "unit": "block"},
+            "pork_belly": {"amount": 250, "unit": "g"},
+            "vinegar": {"amount": 125, "unit": "ml"},
+            "soy_sauce": {"amount": 60, "unit": "ml"},
+            "onion": {"amount": 1, "unit": "pc"}
+        },
+        "steps": [
+            "Boil the pork until tender, then slice into cubes.",
+            "Deep fry the tofu until crispy and cut into cubes.",
+            "Mix vinegar, soy sauce, sugar, and chopped onions in a bowl.",
+            "Combine pork and tofu, then pour the sauce over."
+        ]
+    },
+    "pork_steak": {
+        "name": "Pork Steak (Bistek Style)",
+        "ingredients": {
+            "pork_chops": {"amount": 500, "unit": "g"},
+            "soy_sauce": {"amount": 60, "unit": "ml"},
+            "calamansi": {"amount": 5, "unit": "pc"},
+            "onion": {"amount": 2, "unit": "pc"},
+            "sugar": {"amount": 1, "unit": "tspn"}
+        },
+        "steps": [
+            "Marinate pork in soy sauce and calamansi for 30 minutes.",
+            "Pan-fry the pork chops until browned; set aside.",
+            "Sauté onion rings in the same pan.",
+            "Pour in the marinade, add sugar, simmer, and pour over the pork."
+        ]
+    },
+    "sopas": {
+        "name": "Creamy Chicken Sopas",
+        "ingredients": {
+            "elbow_macaroni": {"amount": 200, "unit": "g"},
+            "chicken_breast": {"amount": 200, "unit": "g"},
+            "evaporated_milk": {"amount": 370, "unit": "ml"},
+            "cabbage": {"amount": 100, "unit": "g"},
+            "hotdog": {"amount": 2, "unit": "pc"}
+        },
+        "steps": [
+            "Sauté garlic, onion, and chicken; add water and boil.",
+            "Add macaroni and cook until al dente.",
+            "Add hotdogs, carrots, and cabbage.",
+            "Pour in evaporated milk and simmer for 2 minutes."
+        ]
+    },
+    "misua_with_patola": {
+        "name": "Misua with Patola",
+        "ingredients": {
+            "misua_noodles": {"amount": 100, "unit": "g"},
+            "patola": {"amount": 1, "unit": "pc"},
+            "ground_pork": {"amount": 100, "unit": "g"},
+            "garlic": {"amount": 3, "unit": "pc"},
+            "water": {"amount": 1000, "unit": "ml"}
+        },
+        "steps": [
+            "Sauté garlic and onions, then add ground pork.",
+            "Add water and bring to a boil.",
+            "Add sliced patola (silk gourd) and cook for 3 minutes.",
+            "Add misua noodles, turn off heat after 1 minute, and serve."
+        ]
+    },
+    "bangus_sisig": {
+        "name": "Bangus Sisig",
+        "ingredients": {
+            "fried_bangus": {"amount": 1, "unit": "pc"},
+            "onion": {"amount": 2, "unit": "pc"},
+            "mayonnaise": {"amount": 3, "unit": "tbsp"},
+            "chili": {"amount": 3, "unit": "pc"},
+            "soy_sauce": {"amount": 1, "unit": "tbsp"}
+        },
+        "steps": [
+            "Flake the fried bangus (milkfish) and remove all bones.",
+            "Sauté onions and chilies in a pan.",
+            "Add the fish flakes and toss until slightly crispy.",
+            "Mix in mayonnaise and soy sauce; serve on a hot plate."
+        ]
+    },
+    "turon": {
+        "name": "Turon (Banana Spring Rolls)",
+        "ingredients": {
+            "saba_banana": {"amount": 6, "unit": "pc"},
+            "lumpia_wrapper": {"amount": 6, "unit": "pc"},
+            "brown_sugar": {"amount": 100, "unit": "g"},
+            "jackfruit": {"amount": 50, "unit": "g"},
+            "oil": {"amount": 250, "unit": "ml"}
+        },
+        "steps": [
+            "Roll the banana in brown sugar.",
+            "Place on a wrapper with a slice of jackfruit and roll tightly.",
+            "Deep fry and sprinkle more sugar into the oil to glaze the wrapper.",
+            "Fry until the sugar has caramelized and turned golden brown."
+        ]
+    },
+    "banana_cue": {
+        "name": "Banana Cue",
+        "ingredients": {
+            "saba_banana": {"amount": 10, "unit": "pc"},
+            "brown_sugar": {"amount": 200, "unit": "g"},
+            "oil": {"amount": 500, "unit": "ml"}
+        },
+        "steps": [
+            "Heat oil in a deep pan.",
+            "Add the bananas and fry for 2 minutes.",
+            "Sprinkle the brown sugar; let it melt and stick to the bananas.",
+            "Skewer the glazed bananas and serve."
+        ]
+    },
+    "maja_blanca": {
+        "name": "Maja Blanca",
+        "ingredients": {
+            "coconut_milk": {"amount": 800, "unit": "ml"},
+            "cornstarch": {"amount": 150, "unit": "g"},
+            "condensed_milk": {"amount": 300, "unit": "ml"},
+            "whole_corn_kernel": {"amount": 1, "unit": "can"},
+            "latik": {"amount": 30, "unit": "g"}
+        },
+        "steps": [
+            "Mix coconut milk, condensed milk, and corn kernels in a pot.",
+            "Dissolve cornstarch in a bit of milk and add to the pot.",
+            "Cook over medium heat, stirring constantly until thick.",
+            "Pour into a tray, cool, and top with latik (fried coconut curd)."
+        ]
+    },
+    "kutsinta": {
+        "name": "Kutsinta",
+        "ingredients": {
+            "all_purpose_flour": {"amount": 1, "unit": "cup"},
+            "tapioca_flour": {"amount": 0.5, "unit": "cup"},
+            "brown_sugar": {"amount": 0.75, "unit": "cup"},
+            "lye_water": {"amount": 1, "unit": "tspn"},
+            "annatto_water": {"amount": 2, "unit": "tbsp"}
+        },
+        "steps": [
+            "Mix all dry ingredients in a bowl.",
+            "Add water, lye water, and annatto water; whisk until smooth.",
+            "Pour into greased molds and steam for 45 minutes.",
+            "Cool completely and serve with grated coconut."
+        ]
+    },
+    "leche_flan": {
+        "name": "Leche Flan",
+        "ingredients": {
+            "egg_yolk": {"amount": 10, "unit": "pc"},
+            "condensed_milk": {"amount": 1, "unit": "can"},
+            "evaporated_milk": {"amount": 1, "unit": "can"},
+            "sugar": {"amount": 1, "unit": "cup"},
+            "vanilla_extract": {"amount": 1, "unit": "tspn"}
+        },
+        "steps": [
+            "Caramelize sugar in llaneras (molds).",
+            "Whisk egg yolks, condensed milk, evaporated milk, and vanilla gently.",
+            "Strain the mixture into the llaneras to ensure it's smooth.",
+            "Cover with foil and steam for 45 minutes; chill before serving."
+        ]
+    }
+}

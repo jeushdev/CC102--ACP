@@ -1,6 +1,6 @@
 {
     "egg": {
-        "amount": 2.0,
+        "amount": 12.0,
         "unit": "pc"
     },
     "oil": {
@@ -12,6 +12,18 @@
         "unit": "g"
     },
     "chicken breast": {
+        "amount": 1000.0,
+        "unit": "g"
+    },
+    "carrots": {
+        "amount": 5.0,
+        "unit": "pc"
+    },
+    "eggplant": {
+        "amount": 8.0,
+        "unit": "pc"
+    },
+    "brown_sugar": {
         "amount": 1000.0,
         "unit": "g"
     }
