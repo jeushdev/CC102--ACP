@@ -2,7 +2,7 @@ import data_manager
 from datetime import datetime
 
 # Items we don't want to "track" or require the user to "buy"
-INFINITE_ITEMS = ["salt", "water", "pepper", "oil", "sugar"]
+INFINITE_ITEMS = ["salt", "water", "pepper", "oil", "sugar", "brown_sugar"]
 
 def view_pantry():
     pantry = data_manager.load_data(data_manager.PANTRY_FILE)
@@ -54,50 +54,50 @@ def get_missing(recipe_ingredients, pantry):
             missing[item] = {"amount": req['amount'] - owned, "unit": req['unit']}
     return missing
 
+# In engine.py
 def find_recipes():
+    print("--- ENGINE IS ANALYZING RECIPES ---") # Add this for debugging
+    pantry = data_manager.load_data(data_manager.PANTRY_FILE) or {}
+    cookbook = data_manager.load_data(data_manager.RECIPES_FILE) or {}
+    
+    available = []
+    locked = []
+
+    for r_id, r_data in cookbook.items():
+        r_data['id'] = r_id 
+        missing = get_missing(r_data['ingredients'], pantry)
+        if not missing:
+            available.append(r_data)
+        elif 0 < len(missing) <= 3:
+            locked.append(r_data)
+            
+    print(f"--- ENGINE FOUND: {len(available)} ready, {len(locked)} locked ---")
+    return available, locked # <--- DOUBLE CHECK THIS IS NOT INDENTED INSIDE THE FOR LOOP
+
+def cook_recipe_gui(recipe_id):
     pantry = data_manager.load_data(data_manager.PANTRY_FILE)
     cookbook = data_manager.load_data(data_manager.RECIPES_FILE)
     
-    print("\n⭐ AVAILABLE QUESTS (100% Match) ⭐")
-    for r_id, r_data in cookbook.items():
-        if not get_missing(r_data['ingredients'], pantry):
-            print(f" > {r_data['name']} (ID: {r_id})")
-
-    print("\n🔒 LOCKED QUESTS (1-3 items missing) 🔒")
-    for r_id, r_data in cookbook.items():
-        miss = get_missing(r_data['ingredients'], pantry)
-        if 0 < len(miss) <= 3:
-            miss_str = ", ".join([f"{v['amount']}{v['unit']} {k}" for k, v in miss.items()])
-            print(f" x {r_data['name']} (Need: {miss_str})")
-
-def cook_recipe():
-    pantry = data_manager.load_data(data_manager.PANTRY_FILE)
-    cookbook = data_manager.load_data(data_manager.RECIPES_FILE)
-
-    recipe_id = input("\nEnter Recipe ID to cook: ").lower()
     if recipe_id not in cookbook:
-        return print("[!] Recipe ID not found.")
+        return False
 
     recipe = cookbook[recipe_id]
-    missing = get_missing(recipe['ingredients'], pantry)
-
-    if missing:
-        return print("[!] You don't have enough loot to craft this!")
-
-    print(f"\n--- COOKING: {recipe['name']} ---")
-    for i, step in enumerate(recipe['steps'], 1):
-        print(f"{i}. {step}")
-
-    # Subtract ingredients
+    
+    # Subtract logic
     for item, req in recipe['ingredients'].items():
         if item.lower() not in INFINITE_ITEMS:
-            pantry[item]['amount'] -= req['amount']
-            if pantry[item]['amount'] <= 0:
-                del pantry[item]
+            # Safely subtract
+            if item in pantry:
+                pantry[item]['amount'] -= req['amount']
+                # If zero or less, remove it
+                if pantry[item]['amount'] <= 0:
+                    del pantry[item]
     
+    # Save the updated pantry
     data_manager.save_data(data_manager.PANTRY_FILE, pantry)
+    # Log to history
     log_cooking(recipe['name'])
-    print("\n[✔] Quest Complete! History updated.")
+    return True
 
 def log_cooking(recipe_name):
     history = data_manager.load_data(data_manager.HISTORY_FILE)
